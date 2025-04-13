@@ -1,0 +1,66 @@
+.social-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #333;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Hover effects for each icon */
+.social-icon.facebook:hover {
+    color: #1877F2;
+    border-color: #1877F2;
+}
+
+.social-icon.twitter:hover {
+    color: #1DA1F2;
+    border-color: #1DA1F2;
+}
+
+.social-icon.instagram:hover {
+    color: #E4405F;
+    border-color: #E4405F;
+}
+
+.social-icon.linkedin:hover {
+    color: #0A66C2;
+    border-color: #0A66C2;
+}
+
+.social-icon.youtube:hover {
+    color: #FF0000;
+    border-color: #FF0000;
+}
+
+.banner {
+    /* UI Properties */
+    /* background: transparent conic-gradient(from 181deg at 50% 50%, var(--unnamed-color-8a764b) 0.00%, #C9A456 100.00%) 0% 0% no-repeat padding-box; */
+    background: transparent conic-gradient(from 181deg at 50% 50%, #8A764B 0.00%, #C9A456 100.00%) 0% 0% no-repeat padding-box;
+    border-radius: 24px;
+    opacity: 1;
+}
+
+.banner img {
+    border-radius: 24px;
+}
+
+.hob {
+    width: 250px;
+}
+
+main {
+    background: transparent linear-gradient(0deg, #00000000 0%, #000000BA 59%, #000000 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(0deg, #00000000 0%, #000000BA 59%, #000000 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
