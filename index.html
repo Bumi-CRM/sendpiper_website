@@ -10,17 +10,34 @@
     <link href="index.css" rel="stylesheet">
 </head>
 
+<style>
+    .full-width-bar {
+      width: 100vw;
+      position: relative;
+      left: 50%;
+      right: 50%;
+      margin-left: -50vw;
+      margin-right: -50vw;
+    }
+    
+    .image-container {
+      position: relative;
+      z-index: -20;
+    }
+  </style>
+
 <body>
-    <main>
-        <div class="min-h-screen max-w-[1673px] w-[80%] mx-auto">
-            <header class=" h-[120px] flex justify-between justify-center items-center">
-                <div class="flex space-x-3 flex-1">
-                    <h2 class="text-[16px] cursor-pointer">Home</h2>
-                    <h2 class="text-[16px] cursor-pointer">About us</h2>
+    <main class="bg-[#1D1D1D] overflow-hidden">
+        <div class="min-h-screen max-w-[1673px] w-[90%] md:w-[80%]  mx-auto relative" >
+            <header class="md:h-[120px] flex justify-between justify-center items-center">
+                <div class="hidden md:flex space-x-3 flex-1">
+                    <h2 class="text-[16px] cursor-pointer text-white">Home</h2>
+                    <a href="about.html">
+                        <h2 class="text-[16px] cursor-pointer text-white">About us</h2>
+                    </a>
                 </div>
-                <div class=" flex-1">
+                <div class="flex-1">
                     <div class="w-[90px] mx-auto cursor-pointer">
-                        <!-- <h1 class="text-[20px] font-bold leading-none">HOUSE OF VISION SPORTS</h1> -->
                         <img src="./images/logo (2).png" />
                     </div>
                 </div>
@@ -39,7 +56,7 @@
                     </div>
                 </div>
             </header>
-            <section class="py-2">
+            <section class="py-2 relative">
                 <div class="min-h-[80vh] banner items-center justify-center p-3 relative">
                     <div class="left-[4%] top-[8%] absolute">
                         <h2 class=" leading-none font-bold text-white text-[40px] hob">OUT HOUSE <br /> IS BUILT<br />
@@ -47,29 +64,35 @@
                             YOUR VISION</h2>
                     </div>
                     <img src="/images/Hero.png" class="mx-auto object-contain" />
+                    <!-- <div class="full-width-bar -rotate-2 h-16 bg-blue-600 -mt-8"></div> -->
                     <div class="absolute right-[3%] space-y-4 bottom-[6%] flex flex-col justify-end items-end">
                         <div
-                            class="p-6 rounded-full h-10 w-10 bg-white flex items-center justify-center cursor-pointer">
+                            class="p-6 rounded-full h-10 w-10 bg-[#8a764B] flex items-center justify-center cursor-pointer">
                             <i class="fas fa-chevron-right"></i>
                         </div>
                         <h2 class="text-white text-[20px] ">GET IN TOUCH</h2>
                     </div>
+                    
                 </div>
             </section>
             <section class="py-10 flex items-center w-full justify-between gap-8">
-                <div class="space-y-4 flex flex-col justify-center items-center w-1/3">
-                    <h2 class="text-[45px] font-bold text-center leading-none">AFRICA <br /> REPPING <br /> AFRICA</h2>
-                    <p class="text-center">Founded in 2024 by a group of experienced international executives from
+                <div class="space-y-6 flex flex-col justify-center items-center w-1/3">
+                    <h2 class="text-[45px] text-white font-bold text-center leading-none">AFRICA <br /> REPPING <br />
+                        AFRICA</h2>
+                    <p class="text-center text-white text-lg">Founded in 2024 by a group of experienced international
+                        executives from
                         Nigeria, we’re a leading agency for African sports, culture, and entertainment, with a goal to
                         represent African athletes and nurture their success on and off the field.</p>
                     <div class="flex items-center flex-1">
-                        <button class="border-[#C9A456] border p-3 rounded-[24px]">OUR TEAM CAN HELP</button>
+                        <button class="border-[#C9A456] text-[#8A764B] border py-3 px-8 rounded-[24px]">OUR TEAM CAN
+                            HELP</button>
                         <div
                             class="p-6 rounded-full h-10 w-10 border-[#C9A456] border flex items-center justify-center cursor-pointer">
                             <i class="fas fa-chevron-right"></i>
                         </div>
-                    </div>
+                    </div>                    
                 </div>
+
                 <div class="w-1/2">
                     <img src="./images/IMAGE(1).png" class="h-[600px] w-[900px] rounded-[24px] object-cover" />
                 </div>
@@ -78,21 +101,24 @@
                 </div>
             </section>
             <section class="py-10 flex w-full gap-8 justify-between items-end">
-                <div class="w-1/4 space-y-2 mt-[-10]">
+                <div class="w-1/4 space-y-2 mb-[-100px]">
                     <img src="./images/basketball girl.png" />
-                    <p>You could be one of the success stories.</p>
+                    <p class="text-white">You could be one of the success stories.</p>
                     <div>
-                        <p>Get in touch</p>
+                        <p class="text-white text-sm cursor-pointer">Get in touch</p>
                     </div>
                 </div>
                 <div class="w-1/3 space-y-6 flex flex-col justify-center items-center">
-                    <h2 class="text-[45px] font-bold text-center leading-none">MOVE WITH <br /> VISION, PLAN WITH <br />
+                    <h2 class="text-[45px] font-bold text-center leading-none text-white">MOVE WITH <br /> VISION, PLAN
+                        WITH <br />
                         PRECISION</h2>
-                    <p class="text-center">Africa’s finest—managed by the best in Africa. We proudly represent the
+                    <p class="text-center text-white">Africa’s finest—managed by the best in Africa. We proudly
+                        represent the
                         finest artists, athletes, and talents from Africa, managed and guided by a team that embodies
                         the very spirit and excellence of the continent.</p>
                     <div class="flex items-center">
-                        <button class="border-[#C9A456] border p-3 rounded-[24px]">OUR TEAM CAN HELP</button>
+                        <button class="border-[#C9A456] text-[#8A764B] border py-3 px-12 rounded-[24px]">START
+                            TODAY</button>
                         <div
                             class="p-6 rounded-full h-10 w-10 border-[#C9A456] border flex items-center justify-center cursor-pointer">
                             <i class="fas fa-chevron-right"></i>
@@ -101,13 +127,13 @@
                 </div>
                 <div class="w-1/3 space-y-2">
                     <img src="./images/Leg on basketball.png" />
-                    <p>Being part of excellence starts with reaching out.</p>
+                    <p class="text-white">Being part of excellence starts with reaching out.</p>
                     <div>
-                        <p>Get in touch</p>
+                        <p class="text-white text-sm cursor-pointer">Get in touch</p>
                     </div>
                 </div>
             </section>
-            <section class="py-10 flex justify-between gap-8">
+            <section class="pt-[150px] flex justify-between gap-8">
                 <div>
                     <img src="./images/BallGirl.png" />
                 </div>
@@ -117,12 +143,15 @@
             </section>
             <section class="py-10">
                 <div class="flex flex-col justify-center items-center space-y-6">
-                    <h2 class="text-[45px] font-bold leading-none text-center uppercase">Level Up <br />Your Legacy</h2>
-                    <p class="text-center w-3/5 mx-auto">We are the bridge between where your career is now and where it
+                    <h2 class="text-[45px] text-white font-bold leading-none text-center uppercase">Level Up <br />Your
+                        Legacy</h2>
+                    <p class="text-center text-white w-3/5 mx-auto">We are the bridge between where your career is now
+                        and where it
                         can go. Our goal is to ensure that when you look back, you see every move was the right one.
                         Play, compete, and become your best—that’s the vision.</p>
                     <div class="flex items-center flex-1">
-                        <button class="border-[#C9A456] text-[#8a764b] border py-3 px-8 rounded-[24px]">LEARN MORE</button>
+                        <button class="border-[#C9A456] text-[#8a764b] border py-3 px-8 rounded-[24px]">LEARN
+                            MORE</button>
                         <div
                             class="p-6 rounded-full h-10 w-10 border-[#C9A456] border flex items-center justify-center cursor-pointer">
                             <i class="fas fa-chevron-right"></i>
@@ -131,7 +160,7 @@
                 </div>
             </section>
             <section class="py-10 items-center justify-center p-3">
-                <div class="banner min-h-[90vh]">
+                <div class="banner min-h-[90vh] items-center justify-center p-3 relative">
                     <img src="./images/Girl holding ball high.png" class="mx-auto object-contain" />
                 </div>
             </section>
@@ -139,7 +168,7 @@
         <footer class="py-10 bg-black">
             <div class="w-4/5 mx-auto">
                 <div class="flex justify-between items-start">
-                    <img src="images/logo (2).png">
+                    <img src="images/logo (2).png" class="cursor-pointer">
                     <div class="space-y-6">
                         <h2 class="text-white text-xl">Follow Us</h2>
                         <div class="social-icons flex-1">
@@ -192,7 +221,7 @@
                 <hr class="h-px my-10 bg-gray-200 opacity-30 border-0">
                 <div class="flex justify-between items-center">
                     <p class="text-[#ffffffde] text-sm">@2025 House of Vision</p>
-                    <p class="text-[#ffffffde] text-sm">Privacy Notice   | Cookie Notice     | Terms and Conditions</p>
+                    <p class="text-[#ffffffde] text-sm">Privacy Notice | Cookie Notice | Terms and Conditions</p>
                 </div>
             </div>
         </footer>
