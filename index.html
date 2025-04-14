@@ -16,9 +16,9 @@
 </head>
 
 <body>
-    <main class="bg-[#171616] overflow-hidden">
+    <main class="overflow-hidden">
         <div class="min-h-screen max-w-[1673px] w-[90%] md:w-[80%]  mx-auto relative">
-            <header class="md:h-[120px] h-[80px] flex justify-between justify-center items-center">
+            <header class="md:h-[120px] h-[80px] md:mt-4 flex justify-between justify-center items-center">
                 <div class="hidden md:flex space-x-6 flex-1">
                     <h2 class="text-[16px] cursor-pointer text-white">Home</h2>
                     <a href="about.html">
@@ -220,17 +220,27 @@
 
                 </div> -->
                 <div class="min-h-[80vh] banner items-center justify-center p-3 relative">
-                    <div class="md:left-[4%] md:top-[8%] left-8 top-8 absolute">
+                    <div class="c-out-house md:left-[4%] md:top-[7%] left-8 top-8 absolute">
                         <h2 class="leading-none font-bold text-white md:text-[40px] text-[25px] hob">OUT HOUSE <br /> IS
                             BUILT<br />
                             ON <br />
                             YOUR <br /> VISION</h2>
                     </div>
-                    <img src="/images/Hero.png" class="mx-auto object-cover w-full h-full min-h-[80vh] "
-                        alt="Hero image" />
+                    <!-- <img src="/images/Hero.png" class="mx-auto object-cover w-full h-full min-h-[80vh] "
+                        alt="Hero image" /> -->
                     <!-- <div class="full-width-bar -rotate-2 h-16 bg-blue-600 -mt-8"></div> -->
+
+
+                    <div class="c-image-wrapper relative w-full min-h-[80vh] overflow-hidden rounded-3xl">
+                        <img src="/images/Hero.png" class="mx-auto object-cover w-full h-full min-h-[80vh]" alt="Hero image" />
+                        
+                        <!-- Overlay -->
+                        <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+                      </div>
+
+
                     <div
-                        class="absolute md:right-[3%] right-8 bottom-5 space-y-4 md:bottom-[6%] flex flex-col justify-end items-end">
+                        class="absolute md:right-[4%] right-8 bottom-5 space-y-4 md:bottom-[7%] flex flex-col justify-end items-end">
                         <div
                             class="h-[63px] w-[63px] rounded-full bg-[#8a764B] hover:bg-white flex items-center justify-center cursor-pointer">
                             <!-- <i class="fas fa-chevron-right"></i> -->
@@ -238,7 +248,7 @@
                                 arrow_outward
                             </span>
                         </div>
-                        <h2 class="text-white text-[20px] ">GET IN TOUCH</h2>
+                        <h2 class="c-get-in-touch text-white text-[20px] ">GET IN TOUCH</h2>
                     </div>
 
                 </div>
@@ -277,9 +287,9 @@
             <section class="py-10 flex flex-col md:flex-row w-full gap-8 justify-between items-end">
                 <div class="md:w-1/4 w-full md:space-y-8 space-y-4 md:mb-[-100px]">
                     <img src="./images/basketball girl.png" />
-                    <p class="text-[#ffffffde] text-2xl">You could be one of the success stories.</p>
+                    <p class="text-[#ffffffde] text-xl">You could be one of the <br />success stories.</p>
                     <div class="flex space-x-2 items-center">
-                        <p class="text-[#ffffffde] cursor-pointer">Get in touch</p>
+                        <p class="text-[#ffffffde] cursor-pointer">Get in touch</p> &nbsp;
                         <span class="material-icons text-[#C9A456]  text-[16px]">
                             east
                         </span>
@@ -307,9 +317,9 @@
                 </div>
                 <div class="md:w-1/3 w-full md:space-y-8 space-y-4">
                     <img src="./images/Leg on basketball.png" />
-                    <p class="text-[#ffffffde] text-2xl md:w-4/5">Being part of excellence starts with reaching out.</p>
+                    <p class="text-[#ffffffde] text-xl md:w-4/5">Being part of excellence <br />starts with reaching out.</p>
                     <div class="flex space-x-2 items-center">
-                        <p class="text-[#ffffffde] cursor-pointer">Get in touch</p>
+                        <p class="text-[#ffffffde] cursor-pointer">Get in touch</p> &nbsp;
                         <span class="material-icons text-[#C9A456] text-[16px]">
                             east
                         </span>
@@ -346,7 +356,7 @@
                     </div>
                 </div>
             </section>
-            <section class="md:py-10 py-8 items-center justify-center p-3">
+            <section class="md:py-10 md:pb-24 py-8 items-center justify-center p-3">
                 <div class="banner md:min-h-[90vh] items-center justify-center p-3 relative">
                     <img src="./images/Girl holding ball high.png" class="mx-auto object-contain shadow-xl" />
                 </div>
