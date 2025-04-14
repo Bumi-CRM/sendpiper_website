@@ -98,6 +98,14 @@ main {
     margin-right: -50vw;
 }
 
+.my-svg path {
+    fill: #8a764b;
+  }
+  /* Change fill to white on hover */
+  .my-svg:hover path {
+    fill: #FFFFFF;
+  }
+
 .image-container {
     position: relative;
     z-index: -20;
