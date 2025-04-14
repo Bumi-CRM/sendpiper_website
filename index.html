@@ -7,79 +7,127 @@
     <title>My Project</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_outward" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=east" /> -->
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="index.css" rel="stylesheet">
 </head>
 
-<style>
-    .full-width-bar {
-      width: 100vw;
-      position: relative;
-      left: 50%;
-      right: 50%;
-      margin-left: -50vw;
-      margin-right: -50vw;
-    }
-    
-    .image-container {
-      position: relative;
-      z-index: -20;
-    }
-  </style>
 
 <body>
     <main class="bg-[#1D1D1D] overflow-hidden">
-        <div class="min-h-screen max-w-[1673px] w-[90%] md:w-[80%]  mx-auto relative" >
-            <header class="md:h-[120px] flex justify-between justify-center items-center">
-                <div class="hidden md:flex space-x-3 flex-1">
+        <div class="min-h-screen max-w-[1673px] w-[90%] md:w-[80%]  mx-auto relative">
+            <header class="md:h-[120px] h-[80px] flex justify-between justify-center items-center">
+                <div class="hidden md:flex space-x-6 flex-1">
                     <h2 class="text-[16px] cursor-pointer text-white">Home</h2>
                     <a href="about.html">
                         <h2 class="text-[16px] cursor-pointer text-white">About us</h2>
                     </a>
                 </div>
-                <div class="flex-1">
-                    <div class="w-[90px] mx-auto cursor-pointer">
-                        <img src="./images/logo (2).png" />
+                <div class="md:flex-1">
+                    <div class="md:w-[150px] w-[90px] mx-auto cursor-pointer">
+                        <img src="./images/logo (2).png" class="object-contain " />
                     </div>
                 </div>
                 <div class="social-icons flex-1">
                     <div class="social-icon facebook">
-                        <i class="fab fa-facebook-f"></i>
+                        <span class="material-icons text-white hover:text-[#C9A456]">
+                            photo_camera
+                        </span>
                     </div>
                     <div class="social-icon twitter">
                         <i class="fab fa-twitter"></i>
                     </div>
                     <div class="social-icon instagram">
-                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-facebook"></i>
                     </div>
                     <div class="social-icon linkedin">
                         <i class="fab fa-linkedin-in"></i>
                     </div>
                 </div>
+                <div class="p-1 border-1 border border-white block md:hidden">
+                    <button id="menuButton" class="text-white border-1 border-white block md:hidden focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+
             </header>
-            <section class="py-2 relative">
-                <div class="min-h-[80vh] banner items-center justify-center p-3 relative">
-                    <div class="left-[4%] top-[8%] absolute">
-                        <h2 class=" leading-none font-bold text-white text-[40px] hob">OUT HOUSE <br /> IS BUILT<br />
-                            ON<br />
-                            YOUR VISION</h2>
+            <div id="sideMenu"
+                class="fixed top-0 left-0 h-screen w-64 bg-black text-white transform -translate-x-full transition-transform z-50">
+                <!-- Close button -->
+                <div class="p-4 flex justify-between items-center">
+                    <div class="w-[40px] flex-1 mx-auto cursor-pointer">
+                        <img src="./images/logo (2).png" class="w-1/2" />
                     </div>
-                    <img src="/images/Hero.png" class="mx-auto object-contain" />
+                    <button id="closeButton" class="text-gray-400  hover:text-white focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Menu items -->
+                <nav class="mt-4 text-[#ffffffde] flex flex-col min-h-[85vh]">
+                    <a href="/" class="block py-3 px-6 hover:bg-gray-700 text-xl transition-colors">Home</a>
+                    <a href="/about.html" class="block py-3 px-6 hover:bg-gray-700 text-xl transition-colors">About
+                        Us</a>
+                    <div class="border-b border-gray-700 mt-4"></div>
+                    <div class="py-6 flex-1">
+                        <a href="#" class="block py-3 px-6 hover:bg-gray-700 transition-colors">Instagram</a>
+                        <a href="#" class="block py-3 px-6 hover:bg-gray-700 transition-colors">Twitter</a>
+                        <a href="#" class="block py-3 px-6 hover:bg-gray-700 transition-colors">facebook</a>
+                        <a href="#" class="block py-3 px-6 hover:bg-gray-700 transition-colors">Linkedln</a>
+                    </div>
+                    <p class="pl-4 text-sm">@2025 House of Vision Limited.</p>
+                </nav>
+            </div>
+            <!-- Overlay to close menu when clicking outside -->
+            <div id="overlay" class="fixed inset-0 bg-black opacity-50 z-40 hidden"></div>
+            <!-- <hr class="h-px my-2 bg-gray-200 opacity-30 border-0"> -->
+            <section class="py-2 relative">
+                <!-- <div class="absolute h-[10] min-w-[100vw] -rotate-2 border-y py-6 border-[#C9A456]">
+
+                </div> -->
+                <div class="min-h-[80vh] banner items-center justify-center p-3 relative">
+                    <div class="md:left-[4%] md:top-[8%] left-8 top-8 absolute">
+                        <h2 class="leading-none font-bold text-white md:text-[40px] text-[25px] hob">OUT HOUSE <br /> IS
+                            BUILT<br />
+                            ON <br />
+                            YOUR <br /> VISION</h2>
+                    </div>
+                    <img src="/images/Hero.png"
+                        class="mx-auto object-cover md:object-contain w-full h-full min-h-[80vh]" alt="Hero image" />
                     <!-- <div class="full-width-bar -rotate-2 h-16 bg-blue-600 -mt-8"></div> -->
-                    <div class="absolute right-[3%] space-y-4 bottom-[6%] flex flex-col justify-end items-end">
+                    <div
+                        class="absolute md:right-[3%] right-8 bottom-5 space-y-4 md:bottom-[6%] flex flex-col justify-end items-end">
                         <div
-                            class="p-6 rounded-full h-10 w-10 bg-[#8a764B] flex items-center justify-center cursor-pointer">
-                            <i class="fas fa-chevron-right"></i>
+                            class="h-[63px] w-[63px] rounded-full bg-[#8a764B] flex items-center justify-center cursor-pointer">
+                            <!-- <i class="fas fa-chevron-right"></i> -->
+                            <span class="material-icons text-[#C9A456]">
+                                arrow_outward
+                            </span>
                         </div>
                         <h2 class="text-white text-[20px] ">GET IN TOUCH</h2>
                     </div>
-                    
+
                 </div>
             </section>
-            <section class="py-10 flex items-center w-full justify-between gap-8">
-                <div class="space-y-6 flex flex-col justify-center items-center w-1/3">
-                    <h2 class="text-[45px] text-white font-bold text-center leading-none">AFRICA <br /> REPPING <br />
-                        AFRICA</h2>
-                    <p class="text-center text-white text-lg">Founded in 2024 by a group of experienced international
+            <section class="md:py-16 py-10 flex md:flex-row flex-col items-center w-full justify-between gap-8">
+                <div class="space-y-6 flex flex-col justify-center items-center md:w-1/3 w-full">
+                    <h2 class="text-[45px] text-[#ffffffde] font-bold text-center leading-none">AFRICA <br /> REPPING
+                        <br />
+                        AFRICA
+                    </h2>
+                    <p class="text-center text-[#ffffffde] text-lg">Founded in 2024 by a group of experienced
+                        international
                         executives from
                         Nigeria, we’re a leading agency for African sports, culture, and entertainment, with a goal to
                         represent African athletes and nurture their success on and off the field.</p>
@@ -88,31 +136,37 @@
                             HELP</button>
                         <div
                             class="p-6 rounded-full h-10 w-10 border-[#C9A456] border flex items-center justify-center cursor-pointer">
-                            <i class="fas fa-chevron-right"></i>
+                            <span class="material-icons text-[#C9A456]">
+                                arrow_outward
+                            </span>
                         </div>
-                    </div>                    
-                </div>
-
-                <div class="w-1/2">
-                    <img src="./images/IMAGE(1).png" class="h-[600px] w-[900px] rounded-[24px] object-cover" />
-                </div>
-                <div class="w-1/4">
-                    <img src="./images/Sanwo olu.png" class="h-[250px] object-cover rounded-[24px]" />
-                </div>
-            </section>
-            <section class="py-10 flex w-full gap-8 justify-between items-end">
-                <div class="w-1/4 space-y-2 mb-[-100px]">
-                    <img src="./images/basketball girl.png" />
-                    <p class="text-white">You could be one of the success stories.</p>
-                    <div>
-                        <p class="text-white text-sm cursor-pointer">Get in touch</p>
                     </div>
                 </div>
-                <div class="w-1/3 space-y-6 flex flex-col justify-center items-center">
-                    <h2 class="text-[45px] font-bold text-center leading-none text-white">MOVE WITH <br /> VISION, PLAN
+
+                <div class="md:w-1/2 w-full">
+                    <img src="./images/IMAGE(1).png" class="h-[600px] w-[900px] rounded-[24px] object-cover" />
+                </div>
+                <div class="md:w-1/4 w-full">
+                    <img src="./images/Sanwo olu.png" class="h-[250px] object-cover rounded-[24px] w-[100%]" />
+                </div>
+            </section>
+            <section class="py-10 flex flex-col md:flex-row w-full gap-8 justify-between items-end">
+                <div class="md:w-1/4 w-full space-y-2 md:mb-[-100px]">
+                    <img src="./images/basketball girl.png" />
+                    <p class="text-[#ffffffde] text-lg">You could be one of the success stories.</p>
+                    <div class="flex space-x-2 items-center">
+                        <p class="text-[#ffffffde] text-sm cursor-pointer">Get in touch</p>
+                        <span class="material-icons text-[#C9A456]  text-[16px]">
+                            east
+                        </span>
+                    </div>
+                </div>
+                <div class="md:w-1/3 w-full space-y-6 flex flex-col justify-center items-center">
+                    <h2 class="text-[45px] font-bold text-center leading-none text-[#ffffffde]">MOVE WITH <br /> VISION,
+                        PLAN
                         WITH <br />
                         PRECISION</h2>
-                    <p class="text-center text-white">Africa’s finest—managed by the best in Africa. We proudly
+                    <p class="text-center text-[#ffffffde]">Africa’s finest—managed by the best in Africa. We proudly
                         represent the
                         finest artists, athletes, and talents from Africa, managed and guided by a team that embodies
                         the very spirit and excellence of the continent.</p>
@@ -121,31 +175,37 @@
                             TODAY</button>
                         <div
                             class="p-6 rounded-full h-10 w-10 border-[#C9A456] border flex items-center justify-center cursor-pointer">
-                            <i class="fas fa-chevron-right"></i>
+                            <span class="material-icons text-[#C9A456]">
+                                arrow_outward
+                            </span>
                         </div>
                     </div>
                 </div>
-                <div class="w-1/3 space-y-2">
+                <div class="md:w-1/3 w-full space-y-2">
                     <img src="./images/Leg on basketball.png" />
-                    <p class="text-white">Being part of excellence starts with reaching out.</p>
-                    <div>
-                        <p class="text-white text-sm cursor-pointer">Get in touch</p>
+                    <p class="text-[#ffffffde] text-lg">Being part of excellence starts with reaching out.</p>
+                    <div class="flex space-x-2 items-center">
+                        <p class="text-[#ffffffde] text-sm cursor-pointer">Get in touch</p>
+                        <span class="material-icons text-[#C9A456] text-[16px]">
+                            east
+                        </span>
                     </div>
                 </div>
             </section>
-            <section class="pt-[150px] flex justify-between gap-8">
+            <section class="md:pt-[150px] flex justify-between gap-8">
                 <div>
-                    <img src="./images/BallGirl.png" />
+                    <img src="./images/BallGirl.png" class="rounded-[24px] h-[240px] md:h-auto object-cover" />
                 </div>
                 <div>
-                    <img src="./images/BallGirl2.png" />
+                    <img src="./images/BallGirl2.png" class="rounded-[24px] h-[240px] md:h-auto object-cover" />
                 </div>
             </section>
             <section class="py-10">
                 <div class="flex flex-col justify-center items-center space-y-6">
                     <h2 class="text-[45px] text-white font-bold leading-none text-center uppercase">Level Up <br />Your
                         Legacy</h2>
-                    <p class="text-center text-white w-3/5 mx-auto">We are the bridge between where your career is now
+                    <p class="text-center text-white md:w-3/5 mx-auto">We are the bridge between where your career is
+                        now
                         and where it
                         can go. Our goal is to ensure that when you look back, you see every move was the right one.
                         Play, compete, and become your best—that’s the vision.</p>
@@ -154,78 +214,117 @@
                             MORE</button>
                         <div
                             class="p-6 rounded-full h-10 w-10 border-[#C9A456] border flex items-center justify-center cursor-pointer">
-                            <i class="fas fa-chevron-right"></i>
+                            <span class="material-icons text-[#C9A456]">
+                                arrow_outward
+                            </span>
                         </div>
                     </div>
                 </div>
             </section>
             <section class="py-10 items-center justify-center p-3">
-                <div class="banner min-h-[90vh] items-center justify-center p-3 relative">
+                <div class="banner md:min-h-[90vh] items-center justify-center p-3 relative">
                     <img src="./images/Girl holding ball high.png" class="mx-auto object-contain" />
                 </div>
             </section>
         </div>
         <footer class="py-10 bg-black">
-            <div class="w-4/5 mx-auto">
-                <div class="flex justify-between items-start">
+            <div class="md:w-4/5 w-[90%] mx-auto">
+
+                <div class="flex space-y-3 flex-col md:flex-row justify-between items-start">
                     <img src="images/logo (2).png" class="cursor-pointer">
-                    <div class="space-y-6">
+                    <hr class="h-px my-8 bg-gray-200 opacity-30 border-0">
+
+                    <div class="space-y-4">
                         <h2 class="text-white text-xl">Follow Us</h2>
                         <div class="social-icons flex-1">
-                            <div class="social-icon facebook">
+                            <div class="social-iconn facebook">
                                 <i class="fab fa-facebook-f"></i>
                             </div>
-                            <div class="social-icon twitter">
+                            <div class="social-iconn twitter">
                                 <i class="fab fa-twitter"></i>
                             </div>
-                            <div class="social-icon instagram">
+                            <div class="social-iconn instagram">
                                 <i class="fab fa-instagram"></i>
                             </div>
-                            <div class="social-icon linkedin">
+                            <div class="social-iconn linkedin">
                                 <i class="fab fa-linkedin-in"></i>
                             </div>
                         </div>
                     </div>
                 </div>
                 <hr class="h-px my-8 bg-gray-200 opacity-30 border-0">
-                <div class="flex items-center space-x-8">
-                    <div class="flex space-x-4">
-                        <div class="h-14 border-l border-[0.2] border-[#C9A456]"></div>
+                <div class="flex flex-col md:flex-row md:items-center items-start md:space-x-8 space-y-3">
+                    <div class="flex md:space-x-4">
+                        <div class="h-14 border-l border-[0.2] hidden md:block border-[#C9A456]"></div>
                         <div class="space-y-2">
-                            <h2 class="text-white text-lg">Inquire</h2>
-                            <p class="text-white text-sm">newbusiness@houseofvision.com</p>
+                            <h2 class="text-white text-lg font-semibold">Inquire</h2>
+                            <p class="text-[#ffffffde] text-sm">newbusiness@houseofvision.com</p>
                         </div>
                     </div>
-                    <div class="flex space-x-4">
-                        <div class="h-14 border-l border-[0.2] border-[#C9A456]"></div>
+                    <div class="flex md:space-x-4">
+                        <div class="h-14 border-l hidden md:block border-[0.2] border-[#C9A456]"></div>
                         <div class="space-y-2">
                             <h2 class="text-white text-lg">Talent Representation</h2>
-                            <p class="text-white text-sm">newbusiness@houseofvision.com</p>
+                            <p class="text-[#ffffffde] text-sm">newbusiness@houseofvision.com</p>
                         </div>
                     </div>
-                    <div class="flex space-x-4">
-                        <div class="h-14 border-l border-[0.2] border-[#C9A456]"></div>
+                    <div class="flex md:space-x-4">
+                        <div class="h-14 border-l hidden md:block border-[0.2] border-[#C9A456]"></div>
                         <div class="space-y-2">
                             <h2 class="text-white text-lg">Press & Media</h2>
-                            <p class="text-white text-sm">newbusiness@houseofvision.com</p>
+                            <p class="text-[#ffffffde] text-sm">newbusiness@houseofvision.com</p>
                         </div>
                     </div>
-                    <div class="flex space-x-4">
-                        <div class="h-14 border-l border-[0.2] border-[#C9A456]"></div>
+                    <div class="flex md:space-x-4">
+                        <div class="h-14 border-l hidden md:block border-[0.2] border-[#C9A456]"></div>
                         <div class="space-y-2">
                             <h2 class="text-white text-lg">Careers</h2>
-                            <p class="text-white text-sm">newbusiness@houseofvision.com</p>
+                            <p class="text-[#ffffffde] text-sm">newbusiness@houseofvision.com</p>
                         </div>
                     </div>
                 </div>
                 <hr class="h-px my-10 bg-gray-200 opacity-30 border-0">
-                <div class="flex justify-between items-center">
+                <div class="flex flex-col md:flex-row justify-between items-center hidden md:flex">
                     <p class="text-[#ffffffde] text-sm">@2025 House of Vision</p>
                     <p class="text-[#ffffffde] text-sm">Privacy Notice | Cookie Notice | Terms and Conditions</p>
+                </div>
+                <div class="py-3 space-y-2 block md:hidden text-white">
+                    <p class="text-[#ffffffde] text-sm">@2025 House of Vision</p>
+                    <p class="py-3"></p>
+                    <p class="text-[#ffffffde] text-sm"> Privacy Notice</p>
+                    <p class="text-[#ffffffde] text-sm">Cookie Notice</p>
+                    <p class="text-[#ffffffde] text-sm">Terms and Conditions</p>
                 </div>
             </div>
         </footer>
     </main>
+
+    <script>
+        // Get elements
+        const menuButton = document.getElementById('menuButton');
+        const closeButton = document.getElementById('closeButton');
+        const sideMenu = document.getElementById('sideMenu');
+        const overlay = document.getElementById('overlay');
+
+        // Open menu function
+        function openMenu() {
+            sideMenu.classList.remove('-translate-x-full');
+            sideMenu.classList.add('translate-x-0');
+            overlay.classList.remove('hidden');
+        }
+
+        // Close menu function
+        function closeMenu() {
+            sideMenu.classList.remove('translate-x-0');
+            sideMenu.classList.add('-translate-x-full');
+            overlay.classList.add('hidden');
+        }
+
+        // Event listeners
+        menuButton.addEventListener('click', openMenu);
+        closeButton.addEventListener('click', closeMenu);
+        overlay.addEventListener('click', closeMenu);
+    </script>
 </body>
 
 </html>
