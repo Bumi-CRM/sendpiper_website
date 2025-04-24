@@ -67,17 +67,6 @@
             font-size: 24px;
             cursor: pointer;
         }
-
-        #Component_7_2 path {
-            fill: rgba(255, 255, 255, 0.87);
-
-            transition: fill 0.3s ease;
-        }
-
-        #Component_7_2:hover path {
-            fill: green;
-
-        }
     </style>
 </head>
 
@@ -87,9 +76,16 @@
             <header
                 class="md:h-[120px] h-[80px] md:mt-4 flex justify-between justify-center items-center max-w-[1673px] w-[90%] md:w-[80%] mx-auto">
                 <div class="hidden md:flex space-x-6 flex-1">
-                    <h2 class="text-[16px] kumbh-sans cursor-pointer text-white">Home</h2>
-                    <a href="about.html">
-                        <h2 class="text-[16px] kumbh-sans cursor-pointer text-white">About us</h2>
+                    <a href="home.html" class="group relative">
+                        <span class="cursor-pointer text-white pb-1">Home</span>
+                        <span
+                            class="absolute left-0 bottom-0 h-0.5 w-0 bg-[#C9A456] transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <!-- <h2 class="text-[16px] kumbh-sans cursor-pointer text-white">Home</h2> -->
+                    <a href="about.html" class="group relative">
+                        <h2 class="text-[16px] kumbh-sans cursor-pointer text-white pb-1">About us</h2>
+                        <span
+                            class="absolute left-0 bottom-0 h-0.5 w-0 bg-[#C9A456] transition-all duration-300 group-hover:w-full"></span>
                     </a>
                 </div>
                 <div class="md:flex-1">
@@ -190,14 +186,20 @@
                         </svg>
                     </div>
                     <div class="cursor-pointer">
-                        <svg id="Component_9_2" data-name="Component 7 – 2" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
-                            <g id="Oval" fill="none" style="mix-blend-mode: normal;isolation: isolate" class="filler">
-                              <!-- <path d="M40,20A20,20,0,1,0,20,40,20,20,0,0,0,40,20Z" stroke="none"/> -->
-                              <path d="M 20 2 C 15.19202041625977 2 10.67182922363281 3.872329711914062 7.272079467773438 7.272079467773438 C 3.872329711914062 10.67182922363281 2 15.19202041625977 2 20 C 2 24.80797958374023 3.872329711914062 29.32817077636719 7.272079467773438 32.72792053222656 C 10.67182922363281 36.12767028808594 15.19202041625977 38 20 38 C 24.80797958374023 38 29.32817077636719 36.12767028808594 32.72792053222656 32.72792053222656 C 36.12767028808594 29.32817077636719 38 24.80797958374023 38 20 C 38 15.19202041625977 36.12767028808594 10.67182922363281 32.72792053222656 7.272079467773438 C 29.32817077636719 3.872329711914062 24.80797958374023 2 20 2 M 20 0 C 31.04570007324219 0 40 8.954299926757812 40 20 C 40 31.04570007324219 31.04570007324219 40 20 40 C 8.954299926757812 40 0 31.04570007324219 0 20 C 0 8.954299926757812 8.954299926757812 0 20 0 Z" stroke="none" fill="rgba(255,255,255,0.87)"/>
+                        <svg id="Component_7_2" data-name="Component 7 – 2" xmlns="http://www.w3.org/2000/svg"
+                            width="40" height="40" viewBox="0 0 40 40" class="filler">
+                            <g id="Oval" fill="none" style="mix-blend-mode: normal;isolation: isolate">
+                                <!-- <path d="M40,20A20,20,0,1,0,20,40,20,20,0,0,0,40,20Z" stroke="none" /> -->
+                                <path
+                                    d="M 20 2 C 15.19202041625977 2 10.67182922363281 3.872329711914062 7.272079467773438 7.272079467773438 C 3.872329711914062 10.67182922363281 2 15.19202041625977 2 20 C 2 24.80797958374023 3.872329711914062 29.32817077636719 7.272079467773438 32.72792053222656 C 10.67182922363281 36.12767028808594 15.19202041625977 38 20 38 C 24.80797958374023 38 29.32817077636719 36.12767028808594 32.72792053222656 32.72792053222656 C 36.12767028808594 29.32817077636719 38 24.80797958374023 38 20 C 38 15.19202041625977 36.12767028808594 10.67182922363281 32.72792053222656 7.272079467773438 C 29.32817077636719 3.872329711914062 24.80797958374023 2 20 2 M 20 0 C 31.04570007324219 0 40 8.954299926757812 40 20 C 40 31.04570007324219 31.04570007324219 40 20 40 C 8.954299926757812 40 0 31.04570007324219 0 20 C 0 8.954299926757812 8.954299926757812 0 20 0 Z"
+                                    stroke="none" fill="rgba(255,255,255,0.87)" />
                             </g>
-                            <path id="Shape" d="M6.244,10.193V20.426H2.013V10.193H0V6.6H2.013V4.27A3.968,3.968,0,0,1,6.282,0L9.417.013V3.5H7.142a.861.861,0,0,0-.9.98V6.6H9.407l-.37,3.593Z" transform="translate(15.319 10.213)" fill="rgba(255,255,255,0.87)" />
-                          </svg>
-                          
+                            <path id="Shape"
+                                d="M6.244,10.193V20.426H2.013V10.193H0V6.6H2.013V4.27A3.968,3.968,0,0,1,6.282,0L9.417.013V3.5H7.142a.861.861,0,0,0-.9.98V6.6H9.407l-.37,3.593Z"
+                                transform="translate(15.319 10.213)" fill="rgba(255,255,255,0.87)"
+                                style="mix-blend-mode: normal;isolation: isolate" />
+                        </svg>
+
                     </div>
                     <div class="cursor-pointer">
                         <svg id="Component_4_2" data-name="Component 4 – 2" xmlns="http://www.w3.org/2000/svg"
@@ -305,7 +307,8 @@
 
                 <!-- Menu items -->
                 <nav class="mt-4 text-[#ffffffde] flex flex-col min-h-[85vh]">
-                    <a href="/" class="block py-3 px-6 hover:bg-gray-700 text-xl transition-colors">Home</a>
+                    <a href="/"
+                        class="block group relative py-3 px-6 hover:bg-gray-700 text-xl transition-colors">Home</a>
                     <a href="/about.html" class="block py-3 px-6 hover:bg-gray-700 text-xl transition-colors">About
                         Us</a>
                     <div class="border-b border-gray-700 mt-4"></div>
@@ -688,10 +691,23 @@
                 </div>
                 <hr class="h-px my-10 bg-gray-200 opacity-30 border-0">
                 <div class="flex flex-col md:flex-row justify-between items-center hidden md:flex">
-                    <p class="text-[#ffffffde] text-sm text-sm kumbh-sans">@2025 House of Vision</p>
-                    <p class="text-[#ffffffde] text-sm text-sm kumbh-sans"><a href="./privacy.html">Privacy Notice</a> |
-                        <a href="./cookie.html">Cookie Notice</a> | <a href="./terms.html">Terms and Conditions</a>
+                    <p class="text-[#ffffffde] text-sm text-sm kumbh-sans hover:text-[#C9A456]">@2025 House of Vision
                     </p>
+                    <div class="flex space-x-2 items-center">
+                        <p class="text-[#ffffffde] text-sm text-sm kumbh-sans hover:text-[#C9A456]">
+                            <a href="./privacy.html">Privacy Notice |
+                            </a>
+                        </p>
+                        <p class="text-[#ffffffde] text-sm text-sm kumbh-sans hover:text-[#C9A456]">
+                            <a href="./cookie.html">Cookie notice |</a>
+                        </p>
+                        <p class="text-[#ffffffde] text-sm text-sm kumbh-sans hover:text-[#C9A456]">
+                            <a href="./terms.html">| Terms and Conditions</a>
+                        </p>
+                    </div>
+                    <!-- <p class="text-[#ffffffde] text-sm text-sm kumbh-sans"><a href="./privacy.html">Privacy Notice</a> |
+                        <a href="./cookie.html" class="hover:text-[#C9A456]">Cookie Notice</a> | <a href="./terms.html">Terms and Conditions</a>
+                    </p> -->
                 </div>
                 <div class="py-3 space-y-2 block md:hidden text-white">
                     <p class="text-[#ffffffde] text-sm kumbh-sans">@2025 House of Vision Limited</p>
