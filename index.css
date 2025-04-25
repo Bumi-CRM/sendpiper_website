@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'Stinger Wide Bold';
+    src: url('Stinger\ Wide\ Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+.font_family{
+    font-family: 'Stinger Wide Bold', Arial, sans-serif;
+}
+
 .social-icons {
     display: flex;
     gap: 10px;
