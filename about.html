@@ -114,7 +114,7 @@
                                     d="M3.121,17.021A3.124,3.124,0,0,1,0,13.9V3.121A3.124,3.124,0,0,1,3.121,0H13.9a3.124,3.124,0,0,1,3.121,3.121V13.9A3.124,3.124,0,0,1,13.9,17.021ZM2.908,8.511a5.6,5.6,0,1,0,5.6-5.6A5.61,5.61,0,0,0,2.908,8.511ZM12.968,2.74a1.326,1.326,0,1,0,1.326-1.326A1.328,1.328,0,0,0,12.968,2.74ZM5.275,8.51a3.235,3.235,0,1,1,3.236,3.237A3.24,3.24,0,0,1,5.275,8.51Z"
                                     transform="translate(11.915 11.915)" fill="rgba(255,255,255,0.87)" />
                             </svg>
-    
+
                         </div>
                         <div class="cursor-pointer">
                             <svg id="Component_6_2" data-name="Component 6 – 2" xmlns="http://www.w3.org/2000/svg"
@@ -144,7 +144,7 @@
                                     transform="translate(15.319 10.213)" fill="rgba(255,255,255,0.87)"
                                     style="mix-blend-mode: normal;isolation: isolate" />
                             </svg>
-    
+
                         </div>
                         <div class="cursor-pointer">
                             <svg id="Component_4_2" data-name="Component 4 – 2" xmlns="http://www.w3.org/2000/svg"
@@ -269,17 +269,20 @@
 
                 <!-- Overlay to close menu when clicking outside -->
                 <div id="overlay" class="fixed inset-0 bg-black opacity-50 z-40 hidden"></div>
-                <hr class="h-px my-2 bg-gray-200 opacity-30 border-0">
+                <hr class="h-px my-2 bg-gray-200 w-4/5 mx-auto opacity-30 border-0">
                 <div>
                     <h1 class="md:text-[100px] text-[50px] text-[#8A764B] kumbh-sans text-center font-bold">ABOUT US
                     </h1>
                 </div>
-                <hr class="h-px my-2 bg-gray-200 opacity-30 border-0">
+                <hr class="h-px my-2 bg-gray-200 w-4/5 mx-auto opacity-30 border-0">
                 <div class="relative">
                     <div class="absolute top-[45%] w-full">
                         <div class="rotate-2">
                             <img src="./images/slant-1.svg" class="!min-w-full !max-w-none" />
                         </div>
+                    </div>
+                    <div class="absolute bottom-0 left-0 w-96 h-96 pointer-events-none"
+                        style="background: radial-gradient(circle, rgba(201, 164, 86, 0.2) 0%, transparent 70%); border-radius: 50%;">
                     </div>
                     <div
                         class="banner md:min-h-[90vh] min-h-[40vh] mt-12 items-center justify-center p-3 relative max-w-[1673px] md:w-[80%] w-[90%] mx-auto">
@@ -323,11 +326,11 @@
                         the world sees sports in and from Africa.</p>
                     <div class="flex items-center justify-center md:justify-start md:w-3/5">
                         <button
-                            class="border-[#C9A456] text-[#8a764b] border py-3 px-8 rounded-[24px] font-semibold">OUR
+                            class="border-[#C9A456] hover:bg-[#C9A4561A] text-[#8a764b] border py-3 px-8 rounded-[24px] font-semibold">OUR
                             TEAM CAN
                             HELP</button>
                         <div
-                            class="p-6 rounded-full h-10 w-10 border-[#C9A456] border flex items-center justify-center cursor-pointer">
+                            class="p-6 rounded-full h-10 w-10 border-[#C9A456] hover:bg-[#C9A4561A] border flex items-center justify-center cursor-pointer">
                             <span class="material-icons text-[#C9A456]">
                                 arrow_outward
                             </span>
@@ -336,60 +339,76 @@
                 </div>
             </div>
         </section>
-        <section class="md:w-[60%] w-[90%] mx-auto md:py-10 py-5 text-[#ffffffde]">
-            <h2 class="text-center font-bold md:text-[75px] text-[40px] leading-none text-[#ffffffde] font_family">OUR <br
-                    class="block md:hidden" /> SERVICES</h2>
-            <div class="block md:hidden py-4">
-                <p class="text-[#ffffffde] text-center kumbh-sans">We support African athletes and coaches by helping
-                    them grow
-                    their
-                    brand, connect with fans, and build something that lasts beyond their sport.</p>
+        <div class="relative">
+            <section class="md:w-[60%] w-[90%] mx-auto md:py-10 py-5 text-[#ffffffde]">
+                <h2 class="text-center font-bold md:text-[75px] text-[40px] leading-none text-[#ffffffde] font_family">
+                    OUR
+                    <br class="block md:hidden" /> SERVICES
+                </h2>
+                <div class="block md:hidden py-4">
+                    <p class="text-[#ffffffde] text-center kumbh-sans">We support African athletes and coaches by
+                        helping
+                        them grow
+                        their
+                        brand, connect with fans, and build something that lasts beyond their sport.</p>
+                </div>
+                <div class="grid grid-col-1 md:grid-cols-3 gap-12 md:py-10 py-8">
+                    <div class="space-y-4">
+                        <h2
+                            class="font-bold text-center md:text-left text-[27px] leading-none text-[#8a764b] font_family">
+                            BRAND <br class="block md:hidden" /> PARTNERSHIPS</h2>
+                        <p class="md:text-left text-center kumbh-sans">We match athletes with the right brands for
+                            sponsorships and
+                            deals</p>
+                    </div>
+                    <div class="space-y-4">
+                        <h2 class="font-bold text-center md:text-left text-[27px] text-[#8a764b] font_family">MARKETING
+                        </h2>
+                        <p class="md:text-left text-center kumbh-sans">We help promote athletes through social media,
+                            content, and
+                            personal branding.</p>
+                    </div>
+                    <div class="space-y-4">
+                        <h2
+                            class="font-bold hidden md:block text-center md:text-left text-[27px] text-[#8a764b] leading-none font_family">
+                            PUBLIC <br class="md:block hidden" />
+                            ENGAGEMENT</h2>
+                        <h2
+                            class="font-bold text-center block md:hidden md:text-left text-[27px] text-[#8a764b] leading-none font_family">
+                            PUBLIC
+                            ENGAGEMENT</h2>
+                        <p class="md:text-left text-center kumbh-sans">We get athletes involved in events, talks, and
+                            opportunities
+                            to speak out and be seen.</p>
+                    </div>
+                    <div class="space-y-4">
+                        <h2 class="font-bold text-center md:text-left text-[27px] text-[#8a764b] font_family">MEDIA
+                            RELATIONS</h2>
+                        <p class="md:text-left text-center kumbh-sans">We handle press and media to make sure their
+                            story is
+                            told the right way.</p>
+                    </div>
+                    <div class="space-y-4">
+                        <h2
+                            class="font-bold text-center md:text-left text-[27px] text-[#8a764b] leading-none font_family">
+                            AGENT <br class="block md:hidden" /> REPRESENTATION</h2>
+                        <p class="md:text-left text-center kumbh-sans">We help manage careers—contracts, planning, and
+                            big-picture moves.</p>
+                    </div>
+                    <div class="space-y-4">
+                        <h2 class="font-bold text-center md:text-left text-[27px] text-[#8a764b] font_family">
+                            PHILANTHROPY
+                        </h2>
+                        <p class="md:text-left text-center kumbh-sans">We support athletes in giving back and starting
+                            causes they care about.</p>
+                    </div>
+                </div>
+            </section>
+            <div class="absolute bottom-0 right-0 w-96 h-96 pointer-events-none"
+                style="background: radial-gradient(circle, rgba(201, 164, 86, 0.2) 0%, transparent 70%); border-radius: 50%;">
             </div>
-            <div class="grid grid-col-1 md:grid-cols-3 gap-12 md:py-10 py-8">
-                <div class="space-y-4">
-                    <h2 class="font-bold text-center md:text-left text-[27px] leading-none text-[#8a764b] font_family">BRAND <br
-                            class="block md:hidden" /> PARTNERSHIPS</h2>
-                    <p class="md:text-left text-center kumbh-sans">We match athletes with the right brands for
-                        sponsorships and
-                        deals</p>
-                </div>
-                <div class="space-y-4">
-                    <h2 class="font-bold text-center md:text-left text-[27px] text-[#8a764b] font_family">MARKETING</h2>
-                    <p class="md:text-left text-center kumbh-sans">We help promote athletes through social media,
-                        content, and
-                        personal branding.</p>
-                </div>
-                <div class="space-y-4">
-                    <h2
-                        class="font-bold hidden md:block text-center md:text-left text-[27px] text-[#8a764b] leading-none font_family">
-                        PUBLIC <br class="md:block hidden" />
-                        ENGAGEMENT</h2>
-                    <h2
-                        class="font-bold text-center block md:hidden md:text-left text-[27px] text-[#8a764b] leading-none font_family">
-                        PUBLIC
-                        ENGAGEMENT</h2>
-                    <p class="md:text-left text-center kumbh-sans">We get athletes involved in events, talks, and
-                        opportunities
-                        to speak out and be seen.</p>
-                </div>
-                <div class="space-y-4">
-                    <h2 class="font-bold text-center md:text-left text-[27px] text-[#8a764b] font_family">MEDIA RELATIONS</h2>
-                    <p class="md:text-left text-center kumbh-sans">We handle press and media to make sure their story is
-                        told the right way.</p>
-                </div>
-                <div class="space-y-4">
-                    <h2 class="font-bold text-center md:text-left text-[27px] text-[#8a764b] leading-none font_family">AGENT <br
-                            class="block md:hidden" /> REPRESENTATION</h2>
-                    <p class="md:text-left text-center kumbh-sans">We help manage careers—contracts, planning, and
-                        big-picture moves.</p>
-                </div>
-                <div class="space-y-4">
-                    <h2 class="font-bold text-center md:text-left text-[27px] text-[#8a764b] font_family">PHILANTHROPY</h2>
-                    <p class="md:text-left text-center kumbh-sans">We support athletes in giving back and starting
-                        causes they care about.</p>
-                </div>
-            </div>
-        </section>
+        </div>
+
         <section class="md:py-10 md:pb-20 py-4 max-w-[1673px] md:w-[80%] w-[90%] mx-auto">
             <div class="flex flex-col md:flex-row justify-between items-center gap-10">
                 <div class="md:space-y-10 space-y-4 flex-1">
@@ -498,11 +517,12 @@
                         your brand beyond sports.</p>
                     <div class="md:flex items-center justify-center flex-1 w-full hidden">
                         <button
-                            class="border-[#C9A456] text-[#8a764b] border font-semibold py-3 px-8 rounded-[24px]">HOW WE
+                            class="border-[#C9A456] hover:bg-[#C9A4561A] text-[#8a764b] border font-semibold py-3 px-8 rounded-[24px]">HOW
+                            WE
                             SUPPORT</button>
                         <div
                             class="p-6 rounded-full h-10 w-10 border-[#C9A456] border flex items-center justify-center cursor-pointer">
-                            <span class="material-icons text-[#C9A456]">
+                            <span class="material-icons text-[#C9A456] hover:bg-[#C9A4561A]">
                                 arrow_outward
                             </span>
                         </div>
@@ -650,7 +670,7 @@
                                 </div>
                                 <div class="flex items-center py-4 flex-1 w-[100%]">
                                     <button
-                                        class="border-[#C9A456] text-[#8a764b] border py-2 px-6 w-full rounded-[24px]">INSTAGRAM</button>
+                                        class="border-[#C9A456] hover:bg-[#C9A4561A] text-[#8a764b] border py-2 px-6 w-full rounded-[24px]">INSTAGRAM</button>
                                     <div
                                         class="p-6 rounded-full h-10 w-10 border-[#C9A456] border flex items-center justify-center cursor-pointer">
                                         <span class="material-icons text-[#C9A456]">
@@ -686,17 +706,17 @@
                                 <div class="space-y-1 w-[100%]">
                                     <div class="flex items-center py-2 flex-1 ">
                                         <button
-                                            class="border-[#C9A456] text-[#8a764b] border py-2 px-6 w-full rounded-[24px]">INSTAGRAM</button>
+                                            class="border-[#C9A456] hover:bg-[#C9A4561A] text-[#8a764b] border py-2 px-6 w-full rounded-[24px]">INSTAGRAM</button>
                                         <div
                                             class="p-6 rounded-full h-10 w-10 border-[#C9A456] border flex items-center justify-center cursor-pointer">
-                                            <span class="material-icons text-[#C9A456]">
+                                            <span class="material-icons hover:bg-[#C9A4561A] text-[#C9A456]">
                                                 photo_camera
                                             </span>
                                         </div>
                                     </div>
                                     <div class="flex items-center flex-1 w-[100%]">
                                         <button
-                                            class="border-[#C9A456] text-[#8a764b] border py-2 px-6 w-full rounded-[24px]">X</button>
+                                            class="border-[#C9A456] hover:bg-[#C9A4561A] text-[#8a764b] border py-2 px-6 w-full rounded-[24px]">X</button>
                                         <div
                                             class="p-6 rounded-full h-10 w-10 border-[#C9A456] border flex items-center justify-center cursor-pointer">
                                             <i class="fab fa-twitter text-[#C9A456]"></i>
